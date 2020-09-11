@@ -29,3 +29,11 @@
 - .form-input (for an input field)
 - .form-text (for a small text beneath the input field)
 - Any label inside a form-group is styles automatically
+
+# Contributing
+
+- Any help is welcome.
+  - Fork the repository
+  - Make a new branch
+  - then push to your fork
+  - then submit a PR
