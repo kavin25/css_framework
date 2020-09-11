@@ -1146,6 +1146,20 @@
   margin-top: 6px;
 }
 
+.form-select {
+  width: 100%;
+  min-height: 40px;
+}
+
+.form-select:focus {
+  outline: 0;
+  color: #495057;
+  background-color: white;
+  border-color: #80BDFC;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
 * {
   margin: 0;
   padding: 0;
