@@ -1,0 +1,18 @@
+@import '../utils/colors';
+@import '../mixins/button';
+
+@each $value in $btn-color-list {
+    .btn-#{nth($value, 1)} {
+        border: 0;
+        background-color: #{nth($value, 2)};
+        color: #{nth($value, 3)};
+        @include make-button;
+    }
+    .btn-outline-#{nth($value, 1)} {
+        border-color: #{nth($value, 2)};
+        border: 1px solid;
+        color: #{nth($value, 2)};
+        background-color: #fff;
+        @include make-button;
+    }
+}

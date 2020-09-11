@@ -1,0 +1,19 @@
+@import '../mixins/grid';
+
+.container {
+    @include make-container;
+}
+
+.row {
+    @include make-row;
+}
+$columns: 12;
+
+@for $i from 1 through $columns {
+    .col-#{$i} {
+        @include make-col($i, $columns);
+    }
+    .col-offset-#{$i} {
+        @include make-col-offset($i, $columns);
+    }
+}

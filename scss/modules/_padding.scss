@@ -1,0 +1,26 @@
+@import "../utils/spacing";
+@import "../mixins/padding";
+
+@each $value in $spacing-list {
+    .pt-#{nth($value, 1)} {
+        @include make-padding-top(#{nth($value, 2)})
+    }
+    .pb-#{nth($value, 1)} {
+        @include make-padding-bottom(#{nth($value, 2)})
+    }
+    .pl-#{nth($value, 1)} {
+        @include make-padding-left(#{nth($value, 2)})
+    }
+    .pr-#{nth($value, 1)} {
+        @include make-padding-right(#{nth($value, 2)})
+    }
+    .p-#{nth($value, 1)} {
+        @include make-padding(#{nth($value, 2)})
+    }
+    .py-#{nth($value, 1)} {
+        @include make-padding-y(#{nth($value, 2)})
+    }
+    .px-#{nth($value, 1)} {
+        @include make-padding-x(#{nth($value, 2)})
+    }
+}

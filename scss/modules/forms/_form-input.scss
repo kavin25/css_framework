@@ -1,0 +1,20 @@
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #CED4DA;
+    min-height: 40px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    font-size: 15px;
+    &:focus {
+        outline: 0;
+        color: rgb(73, 80, 87);
+        background-color: rgb(255, 255, 255);
+        border-color: #80BDFC;
+        box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+    }
+    &::placeholder {
+        font-size: 15px;
+        opacity: 1;
+    }
+}

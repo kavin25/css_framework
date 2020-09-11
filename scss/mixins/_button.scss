@@ -1,0 +1,19 @@
+@mixin make-button {
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    opacity: 90%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    &:hover {
+        opacity: 100%;
+        cursor: pointer;
+    }
+    &:disabled {
+        opacity: 50%;
+        cursor: default;
+    }
+}

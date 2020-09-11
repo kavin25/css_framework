@@ -1,0 +1,18 @@
+@import 'modules/grid';
+@import 'modules/background';
+@import 'modules/txt';
+@import 'modules/buttons';
+@import 'modules/margin';
+@import 'modules/padding';
+@import 'modules/forms';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: sans-serif;
+}

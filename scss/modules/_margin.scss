@@ -1,0 +1,26 @@
+@import "../utils/spacing";
+@import "../mixins/margin";
+
+@each $value in $spacing-list {
+    .mt-#{nth($value, 1)} {
+        @include make-margin-top(#{nth($value, 2)})
+    }
+    .mb-#{nth($value, 1)} {
+        @include make-margin-bottom(#{nth($value, 2)})
+    }
+    .ml-#{nth($value, 1)} {
+        @include make-margin-left(#{nth($value, 2)})
+    }
+    .mr-#{nth($value, 1)} {
+        @include make-margin-right(#{nth($value, 2)})
+    }
+    .m-#{nth($value, 1)} {
+        @include make-margin(#{nth($value, 2)})
+    }
+    .my-#{nth($value, 1)} {
+        @include make-margin-y(#{nth($value, 2)})
+    }
+    .mx-#{nth($value, 1)} {
+        @include make-margin-x(#{nth($value, 2)})
+    }
+}

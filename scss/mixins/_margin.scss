@@ -1,0 +1,29 @@
+@mixin make-margin-top($margin-value) {
+    margin-top: $margin-value;
+}
+
+@mixin make-margin-bottom($margin-value) {
+    margin-bottom: $margin-value;
+}
+
+@mixin make-margin-left($margin-value) {
+    margin-left: $margin-value;
+}
+
+@mixin make-margin-right($margin-value) {
+    margin-right: $margin-value;
+}
+
+@mixin make-margin($margin-value) {
+    margin: $margin-value;
+}
+
+@mixin make-margin-y($margin-value) {
+    margin-top: $margin-value;
+    margin-bottom: $margin-value;
+}
+
+@mixin make-margin-x($margin-value) {
+    margin-right: $margin-value;
+    margin-left: $margin-value;
+}

@@ -1,0 +1,18 @@
+@mixin make-container {
+    width: calc(100% - 10rem);
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+@mixin make-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin make-col($i, $columns) {
+    flex: 0 0 100% / $columns * $i;
+}
+
+@mixin make-col-offset($i, $columns) {
+    margin-left: 100% / $columns * $i;
+}

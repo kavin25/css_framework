@@ -1,0 +1,7 @@
+@import "../utils/colors";
+
+@each $value in $bg-color-list {
+    .txt-#{nth($value, 1)} {
+        color: #{nth($value, 2)};
+    }
+}

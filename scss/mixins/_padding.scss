@@ -1,0 +1,29 @@
+@mixin make-padding-top($padding-value) {
+    padding-top: $padding-value;
+}
+
+@mixin make-padding-bottom($padding-value) {
+    padding-bottom: $padding-value;
+}
+
+@mixin make-padding-left($padding-value) {
+    padding-left: $padding-value;
+}
+
+@mixin make-padding-right($padding-value) {
+    padding-right: $padding-value;
+}
+
+@mixin make-padding($padding-value) {
+    padding: $padding-value;
+}
+
+@mixin make-padding-y($padding-value) {
+    padding-top: $padding-value;
+    padding-bottom: $padding-value;
+}
+
+@mixin make-padding-x($padding-value) {
+    padding-right: $padding-value;
+    padding-left: $padding-value;
+}
